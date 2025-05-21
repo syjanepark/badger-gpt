@@ -59,7 +59,7 @@ function TextApp( {persona}) {
             const resp = await fetch("https://cs571api.cs.wisc.edu/rest/s25/hw11/completions-stream", {
               method: "POST",
               headers: {
-                "X-CS571-ID": "bid_255eed1539e7bbb27d4707107ef5a38390bd96acd89cd9241201d599599a721e",
+                "X-CS571-ID": "-", // removed my id due to security issue
                 "Content-Type": "application/json"
               },
               body: JSON.stringify([
